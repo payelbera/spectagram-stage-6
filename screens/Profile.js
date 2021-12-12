@@ -25,17 +25,7 @@ export default class Profile extends Component {
     }
 
     toggleSwitch() {
-        const previous_state = this.state.isEnabled;
-        const theme = !this.state.isEnabled ? "dark" : "light";
-        var updates = {};
-        updates[
-            "/users/" + firebase.auth().currentUser.uid + "/current_theme"
-        ] = theme;
-        firebase
-            .database()
-            .ref()
-            .update(updates);
-        this.setState({ isEnabled: !previous_state, light_theme: previous_state });
+        //make the function similar to the class activity of story telling app
     }
 
     componentDidMount() {
