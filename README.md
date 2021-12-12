@@ -1,2 +1,2 @@
 # spectagram-stage-6
-project solution for c86
+boiler plate code for stage 6 spectagram app
